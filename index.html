@@ -5,6 +5,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Custom Academic Theme Overrides */
+        #main > section { 
+            background-color: #ffffff; /* Pure white for academic clarity */
+            color: #333333; /* Deep charcoal for readability */
+        }
+        h2, h3, h4 { color: #2c3e50 !important; font-weight: 700 !important; }
+        .essay-text { 
+            font-size: 1.2rem; /* Increased font size as requested */
+            line-height: 1.8; 
+            color: #444;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .green-accent {
+            border-left: 6px solid #4eb980; /* The green accent you liked */
+            background: #f9fdfb;
+            padding: 2rem;
+            border-radius: 0 12px 12px 0;
+        }
+        .item { background: #fff; border: 1px solid #eee; border-radius: 8px; overflow: hidden; }
+        .item header { padding: 1.5rem; background: #fff; }
+        #header { background: #1a1f24; } /* Keep sidebar dark for professional contrast */
+    </style>
 </head>
 <body class="is-preload">
 
@@ -15,7 +39,6 @@
                 <h1 id="title">Alexander Castellanos</h1>
                 <p>Systems Engineer-in-Training</p>
             </div>
-
             <nav id="nav">
                 <ul>
                     <li><a href="#top" id="top-link" class="active"><span class="icon solid fa-home">Executive Summary</span></a></li>
@@ -35,20 +58,17 @@
 
     <div id="main">
 
-        <section id="top" class="one dark cover">
+        <section id="top" class="one">
             <div class="container">
                 <header>
                     <h2 class="alt">Alexander Castellanos</h2>
                     <p>Academic Portfolio | Rock University High School</p>
                 </header>
-                <div style="text-align: left; background: rgba(0,0,0,0.6); padding: 2rem; border-radius: 12px; border-left: 4px solid #4eb980;">
-                    <p><strong>Candidate:</strong> Dual-enrollment student completing an AAS in Information Technology.</p>
-                    <p><strong>Focus:</strong> Integrated Systems Architecture and Hardware-Software Synthesis.</p>
-                    <p><strong>Initiative:</strong> Lead Architect at Tolteca Systems, specializing in enterprise virtualization tools.</p>
+                <div class="green-accent" style="text-align: left;">
+                    <p><strong>Candidate:</strong> Dual-enrollment senior completing an AAS in Information Technology.</p>
+                    <p><strong>Focus:</strong> Integrated Systems Architecture & Hardware-Software Synthesis.</p>
+                    <p><strong>Strategic Lead:</strong> Tolteca Systems — Engineering enterprise virtualization and security utilities.</p>
                 </div>
-                <footer>
-                    <a href="#growth-essay" class="button scrolly">Review Personal Development</a>
-                </footer>
             </div>
         </section>
 
@@ -56,21 +76,21 @@
             <div class="container">
                 <header>
                     <h2>Personal Statement</h2>
-                    <p>The Evolution of an Architect: Navigating Technical Complexity</p>
+                    <p>Synthesizing Complexity: A Journey in Systems Engineering</p>
                 </header>
-                <div style="text-align: justify; line-height: 1.8; font-size: 1.05rem;">
+                <div class="essay-text" style="text-align: justify;">
                     <p>
-                        In the early stages of my academic career, my relationship with technology was primarily utilitarian. I viewed the field as a collection of separate skills to be acquired for the sake of future employment. However, as I transitioned into what I define as my <strong>Integrated Systems Intensive</strong>, my perspective evolved from a modular understanding to a holistic, architectural one. I realized that mastery requires more than just technical proficiency; it requires the ability to synthesize hardware, software, and networking into a cohesive ecosystem. This shift in mindset was the catalyst for Tolteca Systems, an initiative dedicated to solving critical pain points in enterprise-grade virtualization.
+                        In the early stages of my secondary education, my relationship with technology was purely utilitarian. I viewed the field as a collection of separate modules—discrete skills like coding or networking—to be acquired for the sole purpose of future employment. However, as I transitioned into what I define as my <strong>Integrated Systems Intensive</strong>, my perspective evolved from a modular understanding to a holistic, architectural one. I realized that true mastery requires more than just technical proficiency; it requires the ability to synthesize hardware, software, and networking into a cohesive ecosystem. This shift in mindset was the catalyst for Tolteca Systems, an initiative dedicated to solving critical pain points in enterprise-grade virtualization.
                     </p>
                     <p>
-                        This period of growth was tested by a substantial technical challenge: the implementation of persistent GPU passthrough within a multi-node Proxmox and Ceph cluster. What began as a standard configuration task evolved into a deep dive into IOMMU group isolation and the "GPU Reset Bug"—a hardware-level collision that often renders consumer hardware unstable in virtual environments. Navigating this failure required hundreds of hours of iterative testing and low-level system analysis. This experience was a profound lesson in the physical realities of engineering; it taught me that building resilient infrastructure demands a balance of high-level theory and the dogged persistence required to resolve systemic failures.
+                        This period of personal and professional growth was severely tested by a substantial technical challenge: the implementation of persistent GPU passthrough within a multi-node Proxmox and Ceph cluster. What began as a standard configuration task evolved into a deep dive into IOMMU group isolation and the hardware-level "GPU Reset Bug"—a collision that often renders consumer hardware unstable in virtual environments. Navigating this failure required hundreds of hours of iterative testing, low-level system analysis, and a refusal to accept the current limitations of my hardware. This experience provided a profound lesson in the physical realities of engineering; it taught me that building resilient infrastructure demands a balance of high-level theory and the dogged persistence required to resolve systemic failures.
                     </p>
                     
                     <p>
-                        The discipline to sustain this level of focus was cultivated through my mechanical work on vintage Arctic Cat snowmobiles. Troubleshooting these engines in demanding conditions taught me that any failure is solvable through patient, deductive reasoning. I have integrated this "mechanical resilience" into my laboratory practices, ensuring that I approach every software error with the same systematic focus I use for a physical engine.
+                        The discipline to sustain this level of focus was cultivated not in a lab, but on the snowmobile trails of Wisconsin while performing mechanical work on vintage Arctic Cat engines. Troubleshooting mechanical failures in sub-zero conditions taught me that any failure, no matter how daunting, is solvable through patient, deductive reasoning. I have integrated this "mechanical resilience" into my laboratory practices, ensuring that I approach every software error with the same systematic focus I use for a physical engine. This realization—that I have the persistence to solve enterprise-level problems—is what ultimately solidified my decision to pursue a degree in Computer Engineering.
                     </p>
                     <p>
-                        My professional identity is also a reflection of my cultural foundations in Veracruz and Oaxaca. The enduring work ethic of my family (Castellanos, Cruz, and Portugal) serves as a constant motivation to build systems that are as durable as they are innovative. Furthermore, my documentation of abandoned industrial sites provides a historical perspective on engineering lifecycles, reminding me that the systems I design today must be built for long-term sustainability.
+                        My professional identity is also a reflection of my cultural foundations in Veracruz and Oaxaca. The enduring work ethic of my family (Castellanos, Cruz, and Portugal) serves as a constant motivation to build systems that are as durable as they are innovative. Furthermore, my documentation of abandoned industrial sites through urban exploration provides a historical perspective on engineering lifecycles, reminding me that the systems I design today must be built for long-term sustainability and resilience.
                     </p>
                     <p>
                         As I move toward the University of Wisconsin-Madison for Computer Engineering, my goal is to master semiconductor manufacturing and hardware-software integration. This multi-disciplinary journey has prepared me for the rigors of advanced engineering, ensuring that my contributions to the industry will be characterized by both technical excellence and strategic vision.
@@ -83,12 +103,12 @@
             <div class="container">
                 <header>
                     <h2>Professional Development Through Practical Application</h2>
-                    <p>Integrating Skills Across Diverse Domains</p>
+                    <p>Cultivating Skills Across Diverse Engineering Domains</p>
                 </header>
                 <div class="row">
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <span class="image fit"><img src="images/snowmobile.jpg" alt="Mechanical Systems Engineering" /></span>
+                            <span class="image fit"><img src="images/snowmobile.jpg" alt="Mechanical Systems Diagnostics" /></span>
                             <header>
                                 <h3>Mechanical Diagnostics</h3>
                                 <p>Troubleshooting 1990s Arctic Cat engines provides a foundation in systematic problem-solving and patience under technical strain.</p>
@@ -97,19 +117,19 @@
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <span class="image fit"><img src="images/urban_ex.jpg" alt="Industrial Archaeology" /></span>
+                            <span class="image fit"><img src="images/urban_ex.jpg" alt="Industrial Archeology" /></span>
                             <header>
-                                <h3>Industrial Archaeology</h3>
-                                <p>Exploring abandoned engineering sites offers critical insights into system lifecycles, design resilience, and the historical evolution of industry.</p>
+                                <h3>Industrial Archeology</h3>
+                                <p>Exploring abandoned engineering sites offers critical insights into system lifecycles, design resilience, and the evolution of industry.</p>
                             </header>
                         </article>
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <span class="image fit"><img src="images/homelab.jpg" alt="Vardhana Labs" /></span>
+                            <span class="image fit"><img src="images/homelab.jpg" alt="Systems Laboratory" /></span>
                             <header>
                                 <h3>Laboratory Operations</h3>
-                                <p>Managing a 6-node enterprise cluster (Vardhana Labs) develops competencies in high-availability networking, Ceph storage, and Proxmox orchestration.</p>
+                                <p>Managing a 6-node enterprise cluster (Vardhana Labs) develops competencies in networking, Ceph storage, and Proxmox orchestration.</p>
                             </header>
                         </article>
                     </div>
@@ -122,17 +142,17 @@
                 <header>
                     <h2>Strategic Educational & Career Milestones</h2>
                 </header>
-                <div style="text-align: left; background: #f4f4f4; padding: 2rem; border-radius: 8px;">
-                    <h3>Academic & Financial Milestones (Short-Term)</h3>
+                <div style="text-align: left; background: #fff; border: 1px solid #ddd; padding: 2.5rem; border-radius: 12px;">
+                    <h3>Academic & Growth Milestones (Short-Term)</h3>
                     <ul>
                         <li><strong>RUHS Graduation:</strong> Secure a cumulative GPA of 3.75+ by June 2026.</li>
-                        <li><strong>Professional Credentialing:</strong> Successfully earn my AAS in Information Technology by the conclusion of the academic year.</li>
-                        <li><strong>Entrepreneurial Growth:</strong> Generate $20,000 in revenue via technical consulting and product licensing.</li>
+                        <li><strong>Credentialing:</strong> Successfully complete an Associate of Applied Science (AAS) in Information Technology.</li>
+                        <li><strong>Revenue Target:</strong> Generate $20,000 in revenue through technical consulting and product development via Tolteca Systems.</li>
                     </ul>
                     <hr />
-                    <h3>Long-Term Career Aspirations</h3>
-                    <p>Secure admission to the University of Wisconsin-Madison for a B.S. in Computer Engineering, with a specialized focus on semiconductor manufacturing and fabrication. My long-term goal is to establish Tolteca Systems as a premier provider of optimization tools for the enterprise virtualization market.</p>
-                    <p><strong>Action Plan:</strong> I am currently finalizing the Rust-based core engine for my lead project to establish a professional presence in the open-source and enterprise software communities.</p>
+                    <h3>Long-Term Professional Aspirations</h3>
+                    <p>Secure admission to the University of Wisconsin-Madison for a B.S. in Computer Engineering, specializing in semiconductor manufacturing. My objective is to transition Tolteca Systems into a premier provider of optimization tools for the enterprise virtualization market.</p>
+                    <p><strong>Action Plan:</strong> I am currently finalizing the Rust-based core engine for "Atlatl" (FluxGPU) to establish a professional presence in the software community.</p>
                 </div>
             </div>
         </section>
@@ -142,11 +162,11 @@
                 <header>
                     <h2>Inspiration</h2>
                 </header>
-                <blockquote>
-                    <p>"Seeking knowledge at a young age is like engraving on a stone."</p>
-                    <cite>– Hasan of Basra</cite>
+                <blockquote style="font-size: 1.4rem; color: #555; border-left: 5px solid #eee; padding-left: 1.5rem;">
+                    "Seeking knowledge at a young age is like engraving on a stone."
+                    <cite style="display: block; font-size: 1rem; margin-top: 1rem;">– Hasan of Basra</cite>
                 </blockquote>
-                <hr style="margin: 2rem 0;">
+                <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #eee;">
                 <p><strong>Nikola Tesla:</strong> Tesla’s commitment to revolutionary Electrical Engineering through unorthodox self-directed learning is the blueprint for my pursuit of modern Computer Engineering.</p>
             </div>
         </section>
@@ -157,7 +177,7 @@
                     <h2>Acknowledgements</h2>
                 </header>
                 <p>
-                    My sincere gratitude is extended to the Castellanos, Cruz, and Portugal families for their unwavering support. I also recognize the mentors and peers at Rock University High School who have facilitated my transition into multi-disciplinary systems engineering.
+                    My sincere gratitude is extended to the Castellanos, Cruz, and Portugal families for their support. I also recognize the mentors and peers at Rock University High School who have facilitated my transition into systems engineering.
                 </p>
             </div>
         </section>
@@ -167,16 +187,16 @@
                 <header>
                     <h2>Professional Inquiry</h2>
                 </header>
-                <p>For detailed technical whitepapers, repository access, and professional updates, please visit <a href="https://svatantrata.net/" target="_blank">svatantrata.net</a>.</p>
-                <ul class="icons" style="font-size: 1.5rem;">
-                    <li><a href="mailto:alexcastellanos.tech@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/alexandercastellanos/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <p>For technical whitepapers, repository access, and professional logs, please visit <a href="https://svatantrata.net/" target="_blank" style="color: #4eb980; font-weight: bold;">svatantrata.net</a>.</p>
+                <ul class="icons" style="font-size: 2rem;">
+                    <li><a href="mailto:alexcastellanos.tech@gmail.com" class="icon solid fa-envelope" style="color: #333;"><span class="label">Email</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandercastellanos/" class="icon brands fa-linkedin" style="color: #333;"><span class="label">LinkedIn</span></a></li>
                 </ul>
             </div>
         </section>
 
     </div> <footer id="footer">
-        <ul class="copyright">
+        <ul class="copyright" style="color: #999;">
             <li>&copy; Alexander Castellanos. All rights reserved.</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
