@@ -6,28 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Custom Academic Theme Overrides */
+        /* Modernized Typography & Fluid Layout */
+        body, input, select, textarea {
+            font-family: 'Source Sans Pro', 'Open Sans', sans-serif; /* Less "stiff" more modern stack */
+            font-weight: 300;
+            line-height: 1.75;
+        }
+
         #main > section { 
-            background-color: #ffffff; /* Pure white for academic clarity */
-            color: #333333; /* Deep charcoal for readability */
+            background-color: #ffffff; 
+            color: #333333; 
+            padding: 5rem 3rem; /* More vertical and horizontal breathing room */
         }
-        h2, h3, h4 { color: #2c3e50 !important; font-weight: 700 !important; }
-        .essay-text { 
-            font-size: 1.2rem; /* Increased font size as requested */
-            line-height: 1.8; 
-            color: #444;
-            max-width: 900px;
+
+        /* Broadened Essay Layout */
+        .essay-broad {
+            width: 100%; 
+            max-width: 1100px; /* Much broader than the previous version */
             margin: 0 auto;
+            text-align: justify;
+            font-size: 1.2rem;
+            color: #444;
         }
-        .green-accent {
-            border-left: 6px solid #4eb980; /* The green accent you liked */
-            background: #f9fdfb;
-            padding: 2rem;
-            border-radius: 0 12px 12px 0;
+
+        .essay-broad p {
+            margin-bottom: 2rem;
         }
-        .item { background: #fff; border: 1px solid #eee; border-radius: 8px; overflow: hidden; }
-        .item header { padding: 1.5rem; background: #fff; }
-        #header { background: #1a1f24; } /* Keep sidebar dark for professional contrast */
+
+        /* Restored Original Dark Translucent Intro Box */
+        .intro-box-original {
+            text-align: left; 
+            background: rgba(0,0,0,0.55); /* Dark translucent original style */
+            padding: 2rem; 
+            border-radius: 10px;
+            color: #ffffff;
+            border-left: 5px solid #4eb980; /* Tolteca Green accent */
+            margin-top: 2rem;
+        }
+
+        .intro-box-original ul { list-style: none; padding: 0; margin: 0; }
+        .intro-box-original li { margin-bottom: 0.75rem; font-size: 1.1rem; }
+        
+        .accent-text { color: #4eb980; font-weight: 600; }
+
+        h2 { 
+            color: #2c3e50 !important; 
+            font-size: 2.5rem !important; 
+            letter-spacing: -0.02em !important; 
+            margin-bottom: 1.5rem !important;
+        }
+
+        /* Styling for the Goals box to remain professional but clean */
+        .goals-container {
+            background: #fff; 
+            border: 1px solid #e0e0e0; 
+            padding: 3rem; 
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        #header { background: #1a1f24; }
     </style>
 </head>
 <body class="is-preload">
@@ -41,7 +79,7 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#top" id="top-link" class="active"><span class="icon solid fa-home">Executive Summary</span></a></li>
+                    <li><a href="#top" id="top-link" class="active"><span class="icon solid fa-home">About Me</span></a></li>
                     <li><a href="#growth-essay" id="essay-link"><span class="icon solid fa-book-open">Personal Statement</span></a></li>
                     <li><a href="#hobbies" id="hobbies-link"><span class="icon solid fa-heart">Professional Development</span></a></li>
                     <li><a href="#goals" id="goals-link"><span class="icon solid fa-bullseye">Strategic Goals</span></a></li>
@@ -49,7 +87,7 @@
                     <li><a href="#acknowledgements" id="about-link"><span class="icon solid fa-users">Acknowledgements</span></a></li>
                     <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
                     <li><a href="https://svatantrata.net/" target="_blank" rel="noopener noreferrer" class="no-scrolly">
-                        <span class="icon solid fa-sitemap">Technical Portfolio</span>
+                        <span class="icon solid fa-sitemap">Tech Portfolio</span>
                     </a></li>
                 </ul>
             </nav>
@@ -58,16 +96,18 @@
 
     <div id="main">
 
-        <section id="top" class="one">
+        <section id="top" class="one dark cover">
             <div class="container">
                 <header>
-                    <h2 class="alt">Alexander Castellanos</h2>
-                    <p>Academic Portfolio | Rock University High School</p>
+                    <h2 class="alt" style="color:#fff !important;">Alexander Castellanos</h2>
+                    <p>Senior Portfolio | Rock University High School</p>
                 </header>
-                <div class="green-accent" style="text-align: left;">
-                    <p><strong>Candidate:</strong> Dual-enrollment senior completing an AAS in Information Technology.</p>
-                    <p><strong>Focus:</strong> Integrated Systems Architecture & Hardware-Software Synthesis.</p>
-                    <p><strong>Strategic Lead:</strong> Tolteca Systems — Engineering enterprise virtualization and security utilities.</p>
+                <div class="intro-box-original">
+                    <ul>
+                        <li><span class="accent-text">Candidate:</span> Senior at RUHS, finishing an AAS in Information Technology.</li>
+                        <li><span class="accent-text">Path:</span> Entering UW-Madison for Computer Engineering & Semiconductor Design.</li>
+                        <li><span class="accent-text">Innovation:</span> Founder of Tolteca Systems and Lead Architect of Project Itzli.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -76,24 +116,26 @@
             <div class="container">
                 <header>
                     <h2>Personal Statement</h2>
-                    <p>Synthesizing Complexity: A Journey in Systems Engineering</p>
+                    <p>Building Resilience: My Evolution into a Systems Architect</p>
                 </header>
-                <div class="essay-text" style="text-align: justify;">
+                <div class="essay-broad">
                     <p>
-                        In the early stages of my secondary education, my relationship with technology was purely utilitarian. I viewed the field as a collection of separate modules—discrete skills like coding or networking—to be acquired for the sole purpose of future employment. However, as I transitioned into what I define as my <strong>Integrated Systems Intensive</strong>, my perspective evolved from a modular understanding to a holistic, architectural one. I realized that true mastery requires more than just technical proficiency; it requires the ability to synthesize hardware, software, and networking into a cohesive ecosystem. This shift in mindset was the catalyst for Tolteca Systems, an initiative dedicated to solving critical pain points in enterprise-grade virtualization.
+                        For a long time, I saw technology as just a career—a field where I could work on interesting systems, earn a stable income, and eventually "get out" when the job was done. My relationship with my homelab was modular; I focused on solving individual problems without seeing the larger picture. However, as I began my <strong>Integrated Systems Intensive</strong>, everything changed. I realized that my interest wasn't in just maintaining systems for others, but in becoming the architect behind the products themselves. This shift in mindset led me to embrace the challenge of higher education at the University of Wisconsin-Madison, where I intend to master the intersection of hardware and software.
                     </p>
                     <p>
-                        This period of personal and professional growth was severely tested by a substantial technical challenge: the implementation of persistent GPU passthrough within a multi-node Proxmox and Ceph cluster. What began as a standard configuration task evolved into a deep dive into IOMMU group isolation and the hardware-level "GPU Reset Bug"—a collision that often renders consumer hardware unstable in virtual environments. Navigating this failure required hundreds of hours of iterative testing, low-level system analysis, and a refusal to accept the current limitations of my hardware. This experience provided a profound lesson in the physical realities of engineering; it taught me that building resilient infrastructure demands a balance of high-level theory and the dogged persistence required to resolve systemic failures.
+                        This journey has already presented me with significant technical hurdles. My most challenging project to date involved implementing persistent <span style="color: #4eb980; font-weight: 600;">GPU passthrough</span> within a multi-node Proxmox cluster. What began as a routine configuration turned into an exhaustive battle with the hardware reset bug and IOMMU group isolation. I spent countless hours debugging kernel errors and hardware-software collisions. This struggle taught me a vital lesson: building enterprise-grade systems isn't just about code—it’s about the raw planning, physical labor, and persistence required to make different technologies work in unison.
                     </p>
                     
+                    
+
                     <p>
-                        The discipline to sustain this level of focus was cultivated not in a lab, but on the snowmobile trails of Wisconsin while performing mechanical work on vintage Arctic Cat engines. Troubleshooting mechanical failures in sub-zero conditions taught me that any failure, no matter how daunting, is solvable through patient, deductive reasoning. I have integrated this "mechanical resilience" into my laboratory practices, ensuring that I approach every software error with the same systematic focus I use for a physical engine. This realization—that I have the persistence to solve enterprise-level problems—is what ultimately solidified my decision to pursue a degree in Computer Engineering.
+                        This technical grit was actually developed far from my server rack. I learned the value of <span style="color: #4eb980; font-weight: 600;">patience and calm focus</span> on the snowmobile trails, repairing my 1994 Arctic Cat EXT 580. When an engine fails in the cold, panic isn't an option; you have to find the logic in the failure. I’ve carried this "don't panic" mentality into my systems engineering, treating every server crash as a puzzle to be solved with the same systematic focus I use for a physical engine.
                     </p>
                     <p>
-                        My professional identity is also a reflection of my cultural foundations in Veracruz and Oaxaca. The enduring work ethic of my family (Castellanos, Cruz, and Portugal) serves as a constant motivation to build systems that are as durable as they are innovative. Furthermore, my documentation of abandoned industrial sites through urban exploration provides a historical perspective on engineering lifecycles, reminding me that the systems I design today must be built for long-term sustainability and resilience.
+                        My work ethic is also rooted in my cultural heritage from Veracruz and Oaxaca. Watching the perseverance of my family (Castellanos, Cruz, and Portugal) motivates me to build infrastructure that is durable and resilient. This is further reinforced by my interest in urban exploration; documenting the ruins of old industrial sites reminds me that engineering has a lifecycle, and we must design our future systems to withstand the test of time.
                     </p>
                     <p>
-                        As I move toward the University of Wisconsin-Madison for Computer Engineering, my goal is to master semiconductor manufacturing and hardware-software integration. This multi-disciplinary journey has prepared me for the rigors of advanced engineering, ensuring that my contributions to the industry will be characterized by both technical excellence and strategic vision.
+                        As I prepare for the rigors of UW-Madison, my goal is to master <strong>semiconductor manufacturing</strong> and hardware-software integration. My path has taught me that I am capable of architecting complex systems, and I am ready to transition from a student in a lab to a professional architect shaping the future of technology.
                     </p>
                 </div>
             </div>
@@ -102,34 +144,34 @@
         <section id="hobbies" class="three">
             <div class="container">
                 <header>
-                    <h2>Professional Development Through Practical Application</h2>
-                    <p>Cultivating Skills Across Diverse Engineering Domains</p>
+                    <h2>Professional Development</h2>
+                    <p>Bridging Theory and Practical Application</p>
                 </header>
                 <div class="row">
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <span class="image fit"><img src="images/snowmobile.jpg" alt="Mechanical Systems Diagnostics" /></span>
+                            <span class="image fit"><img src="images/snowmobile.jpg" alt="Mechanical Diagnostics" /></span>
                             <header>
                                 <h3>Mechanical Diagnostics</h3>
-                                <p>Troubleshooting 1990s Arctic Cat engines provides a foundation in systematic problem-solving and patience under technical strain.</p>
+                                <p>Troubleshooting vintage Arctic Cat systems has developed my systematic problem-solving skills and technical patience.</p>
                             </header>
                         </article>
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <span class="image fit"><img src="images/urban_ex.jpg" alt="Industrial Archeology" /></span>
+                            <span class="image fit"><img src="images/urban_ex.jpg" alt="Industrial History" /></span>
                             <header>
-                                <h3>Industrial Archeology</h3>
-                                <p>Exploring abandoned engineering sites offers critical insights into system lifecycles, design resilience, and the evolution of industry.</p>
+                                <h3>Industrial History</h3>
+                                <p>Exploring abandoned industrial areas provides perspective on engineering lifecycles and historical system resilience.</p>
                             </header>
                         </article>
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <span class="image fit"><img src="images/homelab.jpg" alt="Systems Laboratory" /></span>
+                            <span class="image fit"><img src="images/homelab.jpg" alt="Systems Lab" /></span>
                             <header>
-                                <h3>Laboratory Operations</h3>
-                                <p>Managing a 6-node enterprise cluster (Vardhana Labs) develops competencies in networking, Ceph storage, and Proxmox orchestration.</p>
+                                <h3>Systems Laboratory</h3>
+                                <p>Managing my 6-node enterprise cluster (Vardhana Labs) is where I apply advanced virtualization and network logic.</p>
                             </header>
                         </article>
                     </div>
@@ -140,19 +182,19 @@
         <section id="goals" class="four">
             <div class="container">
                 <header>
-                    <h2>Strategic Educational & Career Milestones</h2>
+                    <h2>Strategic Goals</h2>
                 </header>
-                <div style="text-align: left; background: #fff; border: 1px solid #ddd; padding: 2.5rem; border-radius: 12px;">
-                    <h3>Academic & Growth Milestones (Short-Term)</h3>
+                <div class="goals-container" style="text-align: left;">
+                    <h3>Academic & Professional Milestones (Short-Term)</h3>
                     <ul>
-                        <li><strong>RUHS Graduation:</strong> Secure a cumulative GPA of 3.75+ by June 2026.</li>
-                        <li><strong>Credentialing:</strong> Successfully complete an Associate of Applied Science (AAS) in Information Technology.</li>
-                        <li><strong>Revenue Target:</strong> Generate $20,000 in revenue through technical consulting and product development via Tolteca Systems.</li>
+                        <li><strong style="color: #2c3e50;">RUHS Graduation:</strong> Secure a cumulative GPA of 3.75+ by June 2026.</li>
+                        <li><strong style="color: #2c3e50;">IT Credentialing:</strong> Successfully earn my AAS in Information Technology by June 2026.</li>
+                        <li><strong style="color: #2c3e50;">Entrepreneurship:</strong> Achieve $20,000 in project-based revenue via Tolteca Systems.</li>
                     </ul>
                     <hr />
-                    <h3>Long-Term Professional Aspirations</h3>
-                    <p>Secure admission to the University of Wisconsin-Madison for a B.S. in Computer Engineering, specializing in semiconductor manufacturing. My objective is to transition Tolteca Systems into a premier provider of optimization tools for the enterprise virtualization market.</p>
-                    <p><strong>Action Plan:</strong> I am currently finalizing the Rust-based core engine for "Atlatl" (FluxGPU) to establish a professional presence in the software community.</p>
+                    <h3>Long-Term Aspirations</h3>
+                    <p>Master Computer Engineering at the University of Wisconsin-Madison with a specialized focus on semiconductor manufacturing. My goal is to establish Tolteca Systems as a premier provider of infrastructure tools for enterprise virtualization.</p>
+                    <p><strong>Action Plan:</strong> I am currently shipping the Rust-based core for "Atlatl" (FluxGPU) to establish a user base before university enrollment.</p>
                 </div>
             </div>
         </section>
@@ -162,12 +204,12 @@
                 <header>
                     <h2>Inspiration</h2>
                 </header>
-                <blockquote style="font-size: 1.4rem; color: #555; border-left: 5px solid #eee; padding-left: 1.5rem;">
+                <blockquote style="font-size: 1.5rem; color: #555; border-left: 6px solid #4eb980; padding-left: 2rem;">
                     "Seeking knowledge at a young age is like engraving on a stone."
-                    <cite style="display: block; font-size: 1rem; margin-top: 1rem;">– Hasan of Basra</cite>
+                    <cite style="display: block; font-size: 1rem; margin-top: 1.5rem;">– Hasan of Basra</cite>
                 </blockquote>
-                <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #eee;">
-                <p><strong>Nikola Tesla:</strong> Tesla’s commitment to revolutionary Electrical Engineering through unorthodox self-directed learning is the blueprint for my pursuit of modern Computer Engineering.</p>
+                <hr style="margin: 3.5rem 0; border: 0; border-top: 1px solid #eee;">
+                <p><strong>Nikola Tesla:</strong> His commitment to revolutionary Electrical Engineering through unorthodox self-directed learning is the primary motivation for my pursuit of Computer Engineering.</p>
             </div>
         </section>
 
@@ -177,7 +219,7 @@
                     <h2>Acknowledgements</h2>
                 </header>
                 <p>
-                    My sincere gratitude is extended to the Castellanos, Cruz, and Portugal families for their support. I also recognize the mentors and peers at Rock University High School who have facilitated my transition into systems engineering.
+                    My sincere gratitude to the Castellanos, Cruz, and Portugal families for their support. I also thank my teachers at RUHS and peers who have supported my goal of becoming a multi-disciplinary systems engineer.
                 </p>
             </div>
         </section>
@@ -185,17 +227,19 @@
         <section id="contact" class="four">
             <div class="container">
                 <header>
-                    <h2>Professional Inquiry</h2>
+                    <h2>Contact</h2>
                 </header>
-                <p>For technical whitepapers, repository access, and professional logs, please visit <a href="https://svatantrata.net/" target="_blank" style="color: #4eb980; font-weight: bold;">svatantrata.net</a>.</p>
-                <ul class="icons" style="font-size: 2rem;">
-                    <li><a href="mailto:alexcastellanos.tech@gmail.com" class="icon solid fa-envelope" style="color: #333;"><span class="label">Email</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/alexandercastellanos/" class="icon brands fa-linkedin" style="color: #333;"><span class="label">LinkedIn</span></a></li>
+                <p>For my technical whitepapers, code, and project logs, visit <a href="https://svatantrata.net/" target="_blank" style="color: #4eb980; font-weight: bold; border-bottom: 2px solid #4eb980;">svatantrata.net</a>.</p>
+                <ul class="icons" style="font-size: 2.5rem;">
+                    <li><a href="mailto:alexcastellanos.tech@gmail.com" class="icon solid fa-envelope" style="color: #2c3e50;"><span class="label">Email</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandercastellanos/" class="icon brands fa-linkedin" style="color: #2c3e50;"><span class="label">LinkedIn</span></a></li>
                 </ul>
             </div>
         </section>
 
-    </div> <footer id="footer">
+    </div>
+
+    <footer id="footer">
         <ul class="copyright" style="color: #999;">
             <li>&copy; Alexander Castellanos. All rights reserved.</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
