@@ -2099,6 +2099,7 @@ input, select, textarea {
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
+		padding-left: 5em; /* Added padding to prevent text overlap with avatar */
 	}
 
 		#logo h1 {
@@ -2169,7 +2170,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #fff;
 					}
 
 /* Footer */
@@ -2241,7 +2242,7 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 4em 0;
 				background-size: cover;
 				background-position: center center;
 			}
